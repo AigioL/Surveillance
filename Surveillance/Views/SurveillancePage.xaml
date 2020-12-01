@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Surveillance.Views.SurveillancePage"
+             xmlns:vm="clr-namespace:Surveillance.ViewModels"
+             Title="{Binding Title}">
+
+    <ContentPage.BindingContext>
+        <vm:SurveillanceViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="{Binding Content}"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"/>
+            <Button VerticalOptions="Center" Text="GoToAppSettings" Command="{Binding GoToAppSettingsCommand}"/>
+            <Button VerticalOptions="Center" Text="GoToRecordVideoPage" Command="{Binding GoToRecordVideoPageCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

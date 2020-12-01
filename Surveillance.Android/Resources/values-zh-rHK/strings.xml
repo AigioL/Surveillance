@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">監控</string>
+  <string name="start">開始</string>
+  <string name="finish">結束</string>
+</resources>
